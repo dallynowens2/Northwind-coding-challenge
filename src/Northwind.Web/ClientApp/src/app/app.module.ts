@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { CounterComponent } from './counter/counter.component';
 import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { CounterTwoComponent } from './counter-two/counter-two.component';
+import { CounterNComponent } from './counter-n/counter-n.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { CounterTwoComponent } from './counter-two/counter-two.component';
     CounterComponent,
     CounterTwoComponent,
     FetchDataComponent,
+    CounterNComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
@@ -29,6 +31,7 @@ import { CounterTwoComponent } from './counter-two/counter-two.component';
       { path: 'counter', component: CounterComponent },
       { path: 'counter-two', component: CounterTwoComponent },
       { path: 'fetch-data', component: FetchDataComponent },
+      { path: 'counter-n', component: CounterNComponent},
     ])
   ],
   providers: [],
